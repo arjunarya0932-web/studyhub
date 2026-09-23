@@ -1367,7 +1367,7 @@ useEffect(() => {
       <li>Transfers data between the computer and peripheral devices.</li>
       <li>Provides status information about I/O devices.</li>
       <li>Coordinates input and output operations.</li>
-      <li>Reduces unnecessary CPU involvement during data transfer.</li>
+      <li>Reduces unnecessary CPU involvement during data transfer.</li>/
     </ul>
 
     <h3>Importance of I/O Organization</h3>
@@ -1386,6 +1386,104 @@ useEffect(() => {
   </section>
 
   
+/* ================= INSTRUCTION SET ================= */
+
+) : activePage === "Instruction Set" ? (
+  <section className="card">
+    <h2>⚙️ Instruction Set</h2>
+
+    <p>
+      An instruction set is a collection of instructions that a processor
+      can understand and execute.
+    </p>
+
+    <h3>Types of Instructions</h3>
+
+    <ul>
+      <li><b>Data Transfer:</b> Moves data between registers and memory.</li>
+      <li><b>Arithmetic:</b> Performs addition, subtraction and other calculations.</li>
+      <li><b>Logical:</b> Performs AND, OR, NOT and comparison operations.</li>
+      <li><b>Control Transfer:</b> Changes the sequence of program execution.</li>
+    </ul>
+
+    <h3>Instruction Cycle</h3>
+
+    <ul>
+      <li>Fetch</li>
+      <li>Decode</li>
+      <li>Execute</li>
+      <li>Store Result</li>
+    </ul>
+
+    <button onClick={() => setActivePage("Computer Architecture")}>
+      ← Back to Computer Architecture
+    </button>
+  </section>
+
+/* ================= MEMORY ================= */
+
+) : activePage === "Memory" ? (
+  <section className="card">
+    <h2>💾 Computer Memory</h2>
+
+    <p>
+      Computer memory is used to store data, instructions and results
+      required by the CPU during program execution.
+    </p>
+
+    <h3>Types of Memory</h3>
+
+    <ul>
+      <li><b>Primary Memory:</b> RAM and ROM are directly accessible by the CPU.</li>
+      <li><b>Secondary Memory:</b> Used for permanent storage of data.</li>
+      <li><b>Cache Memory:</b> High-speed memory that stores frequently used data.</li>
+    </ul>
+
+    <h3>RAM vs ROM</h3>
+
+    <ul>
+      <li><b>RAM:</b> Volatile memory used for temporary data.</li>
+      <li><b>ROM:</b> Non-volatile memory used to store permanent instructions.</li>
+    </ul>
+
+    <button onClick={() => setActivePage("Computer Architecture")}>
+      ← Back to Computer Architecture
+    </button>
+  </section>
+
+
+/* ================= CPU ================= */
+
+) : activePage === "CPU" ? (
+  <section className="card">
+    <h2>🧠 Central Processing Unit (CPU)</h2>
+
+    <p>
+      CPU is the main processing unit of a computer. It executes instructions
+      and performs arithmetic and logical operations.
+    </p>
+
+    <h3>Main Components of CPU</h3>
+
+    <ul>
+      <li><b>ALU:</b> Performs arithmetic and logical operations.</li>
+      <li><b>Control Unit:</b> Controls and coordinates computer operations.</li>
+      <li><b>Registers:</b> Store temporary data and instructions.</li>
+    </ul>
+
+    <h3>Functions of CPU</h3>
+
+    <ul>
+      <li>Fetches instructions from memory</li>
+      <li>Decodes instructions</li>
+      <li>Executes instructions</li>
+      <li>Stores the results</li>
+    </ul>
+
+    <button onClick={() => setActivePage("Computer Architecture")}>
+      ← Back to Computer Architecture
+    </button>
+  </section>
 
 /* ================= COMPUTER ARCHITECTURE ================= */
 
